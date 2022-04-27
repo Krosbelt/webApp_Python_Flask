@@ -15,7 +15,7 @@ def index():  #Function that allows access to data
     datosFormatJSON = datosObtenidos.json() #convert data to json format
     print(datosFormatJSON)
     
-    return render_template('index.html')
+    return render_template('index.html', datos=datosFormatJSON['list'])
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8000, debug=True)
