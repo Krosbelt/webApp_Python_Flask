@@ -17,7 +17,14 @@
                 {% for video in datos %}
                
                 <div class="col-md-3">
-                    KR
+                    <div class="card" style="height: 150;" >
+                        <img height="200" class="card-img-top" src="http://dailymotion.com/thumbnail/video/{{ video["id"] }}" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ video["channel"] }}</h5>
+                            <p class="card-text">{{ video["tittle"] }}</p>
+                            <a name="" id="" class="btn btn-secondary" href="http://dailymotion.com/video/{{ video["id"] }}" role="button" target="_blank">Ver vídeo</a>
+                        </div>
+                    </div>
                 </div>
 
                 {% endfor %}

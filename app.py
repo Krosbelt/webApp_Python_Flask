@@ -11,7 +11,7 @@ app = Flask(__name__)
 #route
 @app.route('/')
 def index():  #Function that allows access to data
-    datosObtenidos = requests.get('https://api.dailymotion.com/videos?channel=sport&limit=10') #request data to the api
+    datosObtenidos = requests.get('https://api.dailymotion.com/videos?channel=music') #request data to the api
     datosFormatJSON = datosObtenidos.json() #convert data to json format
     print(datosFormatJSON)
     
